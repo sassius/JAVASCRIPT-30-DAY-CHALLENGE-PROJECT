@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Londrina Sketch", sans-serif;
+  font-style: normal;
+}
+.container{
+  background-image: url(./assets/cool-background.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player{
+  border: 2px solid;
+  height: 500px;
+  width: 370px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  padding: 25px 20px;
+  display: flex;flex-direction: column;
+  justify-content: space-around;
+}
+.player__upper{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.song__image{
+  display: flex;
+  justify-content: center;
+  
+}
+.song__image img{
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.controler{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+i{
+  cursor: pointer;
+}
+.progress input{
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  margin-bottom: 8px;
+}
+.song__info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 4px;
+  margin-top: 20px;
+}
+.song__name{
+  font-size: 25px;
+  font-weight: 500;
+}
+.song__author{
+font-size: 18px;
+}
+#progres{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: hsl(235, 87%, 58%);
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 40px 0 ;
+}
+#progres::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  background: #065e9c;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: #fff solid;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="player__upper">
+                <i class="material-icons">keyboard_arrow_down</i>
+                <span style="font-size: 21px;">Now Playing</span>
+                <i class="material-icons">more_horiz</i>
+            </div>
+            <div class="song__image">
+                <img src="./assets/Screenshot 2024-10-18 at 6.44.34 PM.png" style="width: 225px; height: 200px;">
+            </div>
+            <audio  id="audio">
+                <source src="./assets/Boku no Hero Academia 3 Opening 1 - ODD FUTURE_default.mp3">
+            </audio>
+            <div class="song__info">
+                <p class="song__name">ODD FUTURE</p>
+                <p class="song__author"> UVERworld</p>
+            </div>
+            <div class="progress">
+                <input type="range" value="0" id="progres">
+            </div>
+            <div class="controler">
+                <i class="material-icons" id="back">fast_rewind</i>
+                <i class="material-icons " id="play">play_arrow</i>
+                <i class="material-icons" id="front">fast_forward</i>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
